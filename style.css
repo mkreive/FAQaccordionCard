@@ -16,6 +16,42 @@
     box-sizing: border-box;
 }
 body {
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(
+        to bottom,
+        var(--color-background-blue),
+        var(--color-background-violet)
+    );
+    height: 100vh;
     font-size: 12px;
+    line-height: 1.5rem;
     font-family: "Kumbh Sans", sans-serif;
+}
+
+.wrapper {
+    width: 65vw;
+    height: 60vh;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 3%;
+}
+.card__content {
+    margin: 2.5rem;
+    flex-basis: 65%;
+}
+.illustration {
+    flex-basis: 35%;
+}
+.illustration__background {
+    position: absolute;
+    left: -500px;
+    top: -290px;
 }
