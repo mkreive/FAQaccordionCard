@@ -41,17 +41,23 @@ body {
     width: 100%;
     height: 100%;
     background-color: white;
-    border-radius: 3%;
 }
+
 .card__content {
-    margin: 2.5rem;
-    flex-basis: 65%;
+    margin: 5rem;
+    margin-left: 35rem;
 }
+
 .illustration {
-    flex-basis: 35%;
-}
-.illustration__background {
     position: absolute;
-    left: -500px;
-    top: -290px;
+    left: -45%;
+    top: -52%;
+}
+
+.illustration__background-woman,
+.illustration__box-box {
+    position: inherit;
+    align-items: center;
+    top: 40%;
+    left: 50%;
 }
