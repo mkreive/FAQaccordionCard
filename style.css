@@ -56,7 +56,6 @@ body {
 }
 
 .questions-accordion {
-    cursor: pointer;
     transition: 0.4s;
     width: 28vw;
 }
@@ -66,12 +65,16 @@ body {
     border-bottom: 1px solid var(--color-dividers-grayish-blue);
     color: var(--color-text-grayish-blue);
 }
+.questions__block:hover {
+    color: var(--color-text-soft-red);
+    font-weight: 700;
+}
 
 .question {
+    position: relative;
     padding: 13px 0;
     display: flex;
     justify-content: space-between;
-    border: none;
 }
 
 .answer {
@@ -97,9 +100,4 @@ body {
     transform: translateX(250%) translateY(-230%);
     z-index: 9;
     overflow: visible;
-}
-
-.question__block:focus {
-    color: var(--color-text-soft-red);
-    font-weight: 700;
 }
