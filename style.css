@@ -24,13 +24,13 @@ body {
         var(--color-background-violet)
     );
     height: 100vh;
-    font-size: 14px;
-    line-height: 1.5rem;
+    font-size: 15px;
+    line-height: 1.3rem;
     font-family: "Kumbh Sans", sans-serif;
 }
 
 .wrapper {
-    width: 65vw;
+    width: 60vw;
     height: 60vh;
 }
 
@@ -47,7 +47,7 @@ body {
 
 .card__content {
     margin: 5rem;
-    margin-left: 35rem;
+    margin-left: 30rem;
 }
 .title {
     font-size: 250%;
@@ -56,22 +56,26 @@ body {
 }
 
 .questions-accordion {
-    transition: 0.4s;
     width: 28vw;
 }
 
 .questions__block {
+    position: relative;
     cursor: pointer;
     border-bottom: 1px solid var(--color-dividers-grayish-blue);
     color: var(--color-text-grayish-blue);
+    transition: 0.4s;
 }
+
 .questions__block:hover {
     color: var(--color-text-soft-red);
+}
+.active {
+    color: var(--color-text-dark-blue);
     font-weight: 700;
 }
 
 .question {
-    position: relative;
     padding: 13px 0;
     display: flex;
     justify-content: space-between;
@@ -80,11 +84,16 @@ body {
 .answer {
     display: none;
     overflow: hidden;
+    color: var(--color-text-grayish-blue);
+    font-weight: 400;
+    padding-bottom: 1rem;
+    font-size: 14px;
+    transition: 1s;
 }
 
 .illustration {
     position: absolute;
-    transform: translateX(-55%) translateY(-30%);
+    transform: translateX(-59%) translateY(-28%);
 }
 
 .illustration__background-woman {
@@ -95,9 +104,9 @@ body {
     top: 12%;
     left: 20%;
 }
-.illustration__box-box {
+/* .illustration__box-box {
     position: absolute;
     transform: translateX(250%) translateY(-230%);
     z-index: 9;
     overflow: visible;
-}
+} */
