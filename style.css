@@ -62,6 +62,7 @@ body {
 }
 
 .questions__block {
+    cursor: pointer;
     border-bottom: 1px solid var(--color-dividers-grayish-blue);
     color: var(--color-text-grayish-blue);
 }
@@ -70,6 +71,7 @@ body {
     padding: 13px 0;
     display: flex;
     justify-content: space-between;
+    border: none;
 }
 
 .answer {
@@ -97,8 +99,7 @@ body {
     overflow: visible;
 }
 
-.active,
-.question:hover {
-    color: var(--color-text-dark-grayish-blue);
+.question__block:focus {
+    color: var(--color-text-soft-red);
     font-weight: 700;
 }
