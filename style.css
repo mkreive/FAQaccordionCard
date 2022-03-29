@@ -124,6 +124,10 @@ body {
 
 /* MEDIA*/
 @media (max-width: 375px) {
+    body {
+        font-size: 13px;
+        line-height: 1.2rem;
+    }
     .wrapper {
         margin-top: 15%;
         height: 70vh;
@@ -143,63 +147,24 @@ body {
     }
 
     .card__content {
-        margin: 2px;
+        padding: 2rem;
         margin-left: 0;
+        margin-top: 8rem;
     }
     .questions-accordion {
-        width: 100vw;
-        transition: all 300ms ease-in-out;
-    }
-
-    .questions__block {
-        position: relative;
-        cursor: pointer;
-        border-bottom: 1px solid var(--color-dividers-grayish-blue);
-        color: var(--color-text-grayish-blue);
-        transition: 0.3s;
-    }
-
-    .questions__block:hover {
-        color: var(--color-text-soft-red);
-    }
-    .active {
-        color: var(--color-text-dark-blue);
-        font-weight: 700;
-    }
-
-    .question {
-        padding: 13px 0;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .answer {
-        display: none;
-        overflow: hidden;
-        color: var(--color-text-grayish-blue);
-        font-weight: 400;
-        padding-bottom: 1rem;
-        font-size: 14px;
-    }
-    .rotate {
-        transform: rotate(180deg);
+        width: 15rem;
     }
 
     .illustration {
-        position: absolute;
         transform: translateX(16%) translateY(-10%);
         background-image: url(https://res.cloudinary.com/kreiva/image/upload/v1648541140/bg-pattern-mobile_oqvdmu.svg);
         width: 240px;
         height: 104px;
-        background-repeat: no-repeat;
-        overflow: visible;
     }
 
     .illustration__background-woman {
-        position: relative;
         transform: translateX(0%) translateY(-30%);
         background-image: url(https://res.cloudinary.com/kreiva/image/upload/v1648541141/illustration-woman-online-mobile_gatv6w.svg);
-        background-repeat: no-repeat;
         width: auto;
         height: 359px;
     }
