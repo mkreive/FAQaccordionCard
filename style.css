@@ -113,14 +113,15 @@ body {
     height: 359px;
 }
 
-.illustration__background-box {
-    position: absolute;
+/* .illustration__background-box {
+    position: fixed;
     background-image: url(https://res.cloudinary.com/kreiva/image/upload/v1648541140/illustration-box-desktop_cnjqsl.svg);
     width: 191px;
     height: 184px;
     background-repeat: no-repeat;
     transform: translateX(245%) translateY(90%);
-}
+    overflow: visible;
+} */
 
 /* MEDIA*/
 @media (max-width: 375px) {
